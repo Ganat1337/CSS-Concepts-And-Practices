@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Concepts & Practices Showcase</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 2px solid #334155;
+      padding-bottom: 20px;
+    }
+    h1 {
+      color: #38bdf8;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 20px;
+      text-decoration: none;
+      color: #f8fafc;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      color: #e2e8f0;
+      margin-bottom: 10px;
+    }
+    .card span {
+      font-size: 0.85rem;
+      color: #38bdf8;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>🎨 CSS Concepts & Practice Demos</h1>
+      <p>Interactive showcase for all my CSS layouts, animations, and components.</p>
+    </header>
+
+    <div class="grid">
+      <a href="./AnimationHoverPaused/index.html" class="card" target="_blank">
+        <h3>Animation Hover Paused</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./EL%20Letter%20Animation/index.html" class="card" target="_blank">
+        <h3>EL Letter Animation</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./Grid%20Layout%203/index.html" class="card" target="_blank">
+        <h3>Grid Layout 3</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./Grid%20Layout1/index.html" class="card" target="_blank">
+        <h3>Grid Layout 1</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./Grid%20Layout2/index.html" class="card" target="_blank">
+        <h3>Grid Layout 2</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./Holy%20Grail%20Layout/index.html" class="card" target="_blank">
+        <h3>Holy Grail Layout</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./Legends-grid/index.html" class="card" target="_blank">
+        <h3>Legends Grid</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./LoveSong/index.html" class="card" target="_blank">
+        <h3>Love Song</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./my-profile-card/index.html" class="card" target="_blank">
+        <h3>My Profile Card</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./Transform-flipCard/index.html" class="card" target="_blank">
+        <h3>Transform Flip Card</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./Transform-task1/index.html" class="card" target="_blank">
+        <h3>Transform Task 1</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./Transform-task2/index.html" class="card" target="_blank">
+        <h3>Transform Task 2</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./Transform-task3/index.html" class="card" target="_blank">
+        <h3>Transform Task 3</h3>
+        <span>View Demo ↗</span>
+      </a>
+
+      <a href="./Transform-task4/index.html" class="card" target="_blank">
+        <h3>Transform Task 4</h3>
+        <span>View Demo ↗</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

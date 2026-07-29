@@ -1,0 +1,69 @@
+body {
+  background-color: #0d1117; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+* {
+  box-sizing: border-box;
+}
+div{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    perspective: 100px;
+    margin: 50px auto;
+    transform-style: preserve-3d;
+    transition: 1s ease-in;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+div::before,div::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backface-visibility: hidden;
+    color: aliceblue;
+}
+div::before{
+    content: "⚠️\A ACCESS\A DENIED";
+    white-space: pre-wrap;
+    text-align: center;
+    background-color: #161b22;
+    color: #ff3e3e;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: inset 0 0 20px rgba(255, 62, 62, 0.2), 0 0 10px rgba(255, 62, 62, 0.3);
+    z-index: 2;
+}
+div::after{
+  content: "💀\A SYSTEM HACKED\A -------------\A PEN_TESTER";
+  white-space: pre-wrap;
+  text-align: center;
+  background-color: #0c1015;
+  color: #00ff66; 
+  font-size: 16px;
+  line-height: 1.6;
+  box-shadow: inset 0 0 20px rgba(0, 255, 102, 0.2), 0 0 10px rgba(0, 255, 102, 0.3);
+  transform: rotateY(180deg);
+}
+div:hover{
+    transform: rotateY(180deg);
+    /* transform: rotateX(-180deg); */
+}

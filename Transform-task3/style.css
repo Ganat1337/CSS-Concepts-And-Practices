@@ -1,0 +1,31 @@
+:root{
+    --main-color:darkred;
+}
+* {
+  box-sizing: border-box;
+}
+div{
+    width: 150px;
+    /* background-color: var(--main-color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    position: relative;
+}
+div::before,div::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    z-index: -1;
+}
+div::before{
+    transform: skewX(10deg) ;
+    background-color: var(--main-color);
+}
+div::after{
+    transform: skewY(-10deg);
+    background-color: var(--main-color);
+}

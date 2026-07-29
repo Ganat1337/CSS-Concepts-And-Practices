@@ -1,0 +1,27 @@
+.layout{
+  height: 100vh;
+  display: grid;
+  grid-template-columns:3fr 1fr ; 
+  grid-template-rows:50px 1fr 50px;
+  grid-template-areas:"Header Header"
+                      "Section Aside" 
+                      "Footer Footer";
+  }
+header{
+  grid-area: Header;
+  background-color: cornflowerblue;
+}
+section{
+  grid-area: Section;
+  background-color: burlywood;
+  
+}
+aside{
+  grid-area: Aside;
+  background-color: darkblue;
+}
+footer{
+  grid-area: Footer;
+  background-color: cornflowerblue;
+
+}
